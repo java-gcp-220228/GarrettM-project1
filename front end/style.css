@@ -1,0 +1,17 @@
+#portal {
+    text-align: center;
+    background-color: beige;
+}
+.form-input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#login {
+    text-align: center;
+}
+#logout-btn {
+    text-align: center;
+}
+.left {
+    text-align: left;
+}

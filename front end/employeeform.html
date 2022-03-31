@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1 style="font-family: Courier New">Construction Actually LLC</h1>
+</header>
+<body>
+    <a href="employee.html" target="_self">Return to List</a>
+    <div id="portal">
+        <h2>Welcome to Employee Reinbursment Portal</h2>
+        <h3>New Ticket Form</h3>
+        <div class="form-input">
+            <label for="ticketName">Ticket Name:</label>
+            <input id="ticketName" type="text">
+        </div>
+        <div class="form-input">
+            <label for="description">Ticket Description:</label>
+            <input id="description" type="text">
+        </div>
+        <div class="form-input">
+            <label for="amount">Ticket Amount:</label>
+            <input id="amount" type="number">
+        </div>
+        <div>
+        <label for="a-file-input">Photograph of Receipt</label>
+        <input type="file" id="a-file-input" />
+        </div>
+        <div class="form-input">
+            <label for="type">Ticket Type:</label>
+            <input type="radio" id="Lodging" name="type" value="1" checked>
+            <label for="Lodging">Lodging</label>
+            <input type="radio" id="Travel" name="type" value="2">
+            <label for="Travel">Travel</label>
+            <input type="radio" id="Food" name="type" value="3">
+            <label for="Food">Food</label>
+            <input type="radio" id="Other" name="type" value="4">
+            <label for="Other">Other</label>
+        </div>
+        <button id="submit-btn">Submit</button>
+    </div>
+    <button id="logout-btn">logout</button>
+    <script src="employee-form.js"></script>
+    
+</body>
+</html>
