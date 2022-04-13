@@ -22,3 +22,6 @@ To-do list:
 - Password Hashing
 - Support on GCP
 
+##Getting Started
+In its curent state, the program runs locally. A copy of the sql commands is included [Here](https://github.com/java-gcp-220228/GarrettM-project1/blob/main/SQL%20commands.md)
+
