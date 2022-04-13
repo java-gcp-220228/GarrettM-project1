@@ -57,8 +57,10 @@ public class TicketTest {
         String dsc = "painful";
         String typ = "loving";
         float amount = 57;
+        String CT = "1/2";
+        String RT = "1/5";
 
-        Ticket mockTicket1 = new Ticket(1, tN, sts, dsc, typ, amount, mockEmployee, mockFinanceManager);
+        Ticket mockTicket1 = new Ticket(1, tN, sts, dsc, typ, amount, CT, RT, mockEmployee, mockFinanceManager);
 
         String actual = mockTicket1.toString();
         System.out.println(actual);
@@ -69,6 +71,9 @@ public class TicketTest {
                 ", approval=" + sts + '\'' +
                 ", description=" + dsc + '\'' +
                 ", type=" + typ + '\'' +
+                ", amount=" + amount + '\'' +
+                ", Creation time=" + CT +'\'' +
+                ", Resolution time="+ RT + '\'' +
                 ", employee=" + mockEmployee.getUsername() + '\'' +
                 ", financeManager=" + mockFinanceManager.getUsername() + '\'' +
                 '}';
