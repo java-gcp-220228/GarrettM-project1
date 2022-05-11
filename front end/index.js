@@ -4,7 +4,7 @@ loginBtn.addEventListener('click', async () => {
     let usernameInput = document.querySelector('#username');
     let passwordInput = document.querySelector('#password');
 
-    const URL = 'http://localhost:8080/login';
+    const URL = 'http://34.145.117.3:8080/login';
 
     const jsonString = JSON.stringify({
         "username": usernameInput.value,

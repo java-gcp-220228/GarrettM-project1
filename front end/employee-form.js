@@ -40,7 +40,7 @@ submitButton.addEventListener('click', async () => {
     formData.append('image', ticketImageInput.files[0]);
 
     try {
-        let res = await fetch(`http://localhost:8080/users/${localStorage.getItem('user_id')}/tickets`,{
+        let res = await fetch(`http://34.145.117.3:8080/users/${localStorage.getItem('user_id')}/tickets`,{
             method: 'POST',
             body: formData,
             headers: {

@@ -11,7 +11,7 @@ window.addEventListener('load', (event) => {
 });
 
 async function populateTicketsTable() {
-    const URL = `http://localhost:8080/tickets/pending`;
+    const URL = `http://34.145.117.3:8080/tickets/pending`;
 
     let res = await fetch(URL, {
         method: 'GET',
@@ -62,7 +62,7 @@ async function populateTicketsTable() {
             
             let td11 = document.createElement('td');
             let imgElement = document.createElement('img');
-            imgElement.setAttribute('src', `http://localhost:8080/tickets/${ticket.id}/image`);
+            imgElement.setAttribute('src', `http://34.145.117.3:8080/tickets/${ticket.id}/image`);
             imgElement.style.height = '100px';
             td11.appendChild(imgElement);           
 
@@ -96,7 +96,7 @@ async function populateTicketsTable() {
                 denyStatus.addEventListener('click', async () => {
                     console.log('deny button pressed');
                     let response = 'Denied';
-                    let res = await fetch(`http://localhost:8080/tickets/${ticket.id}?status=${response}`, {
+                    let res = await fetch(`http://34.145.117.3:8080/tickets/${ticket.id}?status=${response}`, {
                         method: 'PATCH',
                         headers: {
                             'Authorization': `Bearer ${localStorage.getItem('jwt')}`
@@ -112,7 +112,7 @@ async function populateTicketsTable() {
                 approveStatus.addEventListener('click', async () => {
                     console.log('approve button clicked');
                     let response = 'Approved';
-                    let res = await fetch(`http://localhost:8080/tickets/${ticket.id}?status=${response}`, {
+                    let res = await fetch(`http://34.145.117.3:8080/tickets/${ticket.id}?status=${response}`, {
                         method: 'PATCH',
                         headers: {
                             'Authorization': `Bearer ${localStorage.getItem('jwt')}`

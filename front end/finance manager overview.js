@@ -37,7 +37,7 @@ window.addEventListener('load', (event) => {
 });
 
 async function populateTicketsTable() {
-    const URL = `http://localhost:8080/tickets/`;
+    const URL = `http://34.145.117.3:8080/tickets/`;
 
     let res = await fetch(URL, {
         method: 'GET',
@@ -90,7 +90,7 @@ async function populateTicketsTable() {
             
             let td11 = document.createElement('td');
             let imgElement = document.createElement('img');
-            imgElement.setAttribute('src', `http://localhost:8080/tickets/${ticket.id}/image`);
+            imgElement.setAttribute('src', `http://34.145.117.3:8080/tickets/${ticket.id}/image`);
             imgElement.style.height = '100px';
             td11.appendChild(imgElement);           
 
