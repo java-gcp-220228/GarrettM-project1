@@ -25,7 +25,7 @@ To-do list:
 
 ## Getting Started
 The backend code is all on a GCP compute instance, deprecated instructions are now removed. The SQL instrutions will remain a part of this repository.
-
+- Clone is repository
 - Navigate to the front end folder, open the index.html file. It should open in your web browser of choice.
 ## Usage
 - Login with any of these provided users "Username: manhunter; Password: martian" "Username: kidflash; Password: gozoom" "Username: robin; Password: nightwing".
